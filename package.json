@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/wanjunjie/wanjunjie.github.io/issues"
   },
-  "homepage": "https://github.com/wanjunjie/wanjunjie.github.io#readme"
+  "homepage": "https://github.com/wanjunjie/wanjunjie.github.io#readme",
+  "devDependencies": {
 }
