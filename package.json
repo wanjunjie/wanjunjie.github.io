@@ -17,4 +17,7 @@
   },
   "homepage": "https://github.com/wanjunjie/wanjunjie.github.io#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5"
+  }
 }
