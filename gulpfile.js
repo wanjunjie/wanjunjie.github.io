@@ -5,11 +5,11 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
 
 //定义一个testLess任务（自定义任务名称）
 gulp.task('testLess', function () {
-    gulp.src(['src/less/index.less', 'src/less/detail.less']) //该任务针对的文件,多个文件以数组形式传入
+    //编译src/less目录下的所有less文件（**匹配src/less下的0个或多个子文件夹）
+    gulp.src(['src/less/**/*.less', '!src/less/**/{reset, test}.less']) //该任务针对的文件,多个文件以数组形式传入,除了reset.less和test.less
         .pipe(less()) //该任务调用的模块
         .pipe(gulp.dest('src/css')); //将会在src/css下生成index.css以及detail.css
 });
-
 
 gulp.task('default',['testLess']); //定义默认任务
 
